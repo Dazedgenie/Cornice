@@ -1,0 +1,18 @@
+# Godot caches
+.godot/
+/android/
+/.mono/
+
+# Exports and local builds
+/build/
+/export/
+*.pck
+*.zip
+
+# Local test output
+/artifacts/
+*.log
+
+# Python tooling cache
+__pycache__/
+*.pyc

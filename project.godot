@@ -1,12 +1,12 @@
-; SUMMIT TRICK - low poly snowboard racing
+; CORNICE - low poly arcade snowboard racing
 ; Godot 4.x project file
 
 config_version=5
 
 [application]
 
-config/name="Summit Trick"
-config/description="A low-poly SSX-style snowboard racing game. Carve, launch, spin, grab and grind your way down three mountains."
+config/name="Cornice"
+config/description="An original low-poly arcade snowboard game. Carve, launch, spin, grab and grind your way down the mountain."
 run/main_scene="res://scenes/main.tscn"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 boot_splash/bg_color=Color(0.02, 0.03, 0.07, 1)

@@ -81,7 +81,7 @@ func _build_terrain() -> void:
 	terrain_material.vertex_color_use_as_albedo = true
 	terrain_material.roughness = 1.0
 	terrain_material.metallic = 0.0
-	terrain_material.specular = 0.0
+	terrain_material.metallic_specular = 0.0
 
 	var step := 6.0
 	var x0 := -course.width * 0.5

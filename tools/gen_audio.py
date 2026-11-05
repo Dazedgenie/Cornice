@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Synthesize the Summit Trick SFX and fallback music into audio/*.wav.
+"""Synthesize the Cornice SFX and fallback music into audio/*.wav.
 
 The shipped menu, race and Trick Attack tracks are CC0 music from OpenGameArt;
 see THIRD_PARTY_AUDIO.md. music.wav is the fallback if those files are missing.

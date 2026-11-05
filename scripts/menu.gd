@@ -51,8 +51,7 @@ func _build() -> void:
 	add_child(root)
 
 	# Title: centred above the rider, flanked by the pickers.
-	UiKit.label(root, "SUMMIT", 92, UiKit.PAPER, Vector2(276, 8), Vector2(360, 104), HORIZONTAL_ALIGNMENT_CENTER)
-	UiKit.label(root, "TRICK", 92, UiKit.ACCENT, Vector2(644, 8), Vector2(360, 104), HORIZONTAL_ALIGNMENT_CENTER)
+	UiKit.label(root, "CORNICE", 92, UiKit.PAPER, Vector2(380, 8), Vector2(520, 104), HORIZONTAL_ALIGNMENT_CENTER)
 	UiKit.label(root, "CARVE  ·  SPIN  ·  GRAB  ·  GRIND  ·  STACK COMBOS", 15, UiKit.MUTED, Vector2(0, 108), Vector2(1280, 24), HORIZONTAL_ALIGNMENT_CENTER)
 	UiKit.color_rect(root, Rect2(470, 138, 340, 2), UiKit.ACCENT)
 

@@ -1,7 +1,9 @@
 extends Node3D
 ## Race orchestrator: menus, race setup, countdown, standings, results and save data.
 
-const SAVE_PATH := "user://summit_trick.cfg"
+const SAVE_PATH := "user://cornice.cfg"
+## Saves written before the rename to Cornice. Read once if no new save exists.
+const LEGACY_SAVE_PATH := "user://summit_trick.cfg"
 const TRICK_TIME := 120.0
 
 var trick_medals: Array = [
@@ -51,7 +53,7 @@ var _shot_stage := 0
 func _ready() -> void:
 	process_mode = Node.PROCESS_MODE_ALWAYS
 	if DisplayServer.get_name() != "headless":
-		DisplayServer.window_set_title("SUMMIT TRICK")
+		DisplayServer.window_set_title("CORNICE")
 	_setup_input()
 	course_defs = Course.course_defs()
 	audio = AudioDirector.new()
@@ -631,7 +633,10 @@ func _clear_race() -> void:
 
 func _load_progress() -> void:
 	var cfg := ConfigFile.new()
-	if cfg.load(SAVE_PATH) == OK:
+	var loaded := cfg.load(SAVE_PATH)
+	if loaded != OK:
+		loaded = cfg.load(LEGACY_SAVE_PATH)
+	if loaded == OK:
 		for i in course_defs.size():
 			best_scores[i] = int(cfg.get_value("best", "course_%d" % i, 0))
 			trick_best_scores[i] = int(cfg.get_value("best", "trick_course_%d" % i, 0))

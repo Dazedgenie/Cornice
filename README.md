@@ -1,6 +1,7 @@
-# SUMMIT TRICK
+# CORNICE
 
-A low-poly, SSX Tricky-flavoured snowboard game built entirely in **Godot 4**.
+An original low-poly arcade snowboard game built entirely in **Godot 4**: huge air,
+long trick chains and real speed.
 Three procedurally generated mountains, five rival riders, two modes, big
 kickers, grindable rails, spins, flips, grabs, combo banking and a Tricky meter
 with signature tricks.
@@ -59,7 +60,7 @@ to the menu.
 Menu: mouse, `T` to switch between Race and Trick Attack, `1`–`3` for
 mountains, `Q`/`E` for riders, `Enter` to drop in. The **AUDIO / MUSIC
 VOLUME** slider adjusts the soundtrack in real time and is saved to
-`user://summit_trick.cfg` with your other settings.
+`user://cornice.cfg` with your other settings.
 
 ## How the game works
 
